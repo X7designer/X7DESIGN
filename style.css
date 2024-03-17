@@ -107,7 +107,7 @@ section.topo-do-site .flex{
     margin: 40px 0px;
 }
 
-.topo-do-site.txt-topo-site img{
+.topo-do-site .txt-topo-site img{
     width: 100%;
     animation: robo 1.5s infinite alternate;
 }
@@ -152,6 +152,10 @@ margin: 15px 0;
 section.sobre{
     padding: 80px 4%;
     
+}
+
+.img-sobre img{
+    border-radius: 30px;
 }
 
 section.sobre .flex{
@@ -321,3 +325,87 @@ footer .line-footer p a{
 .borda{
     border-top: 2px solid #207c78;
 }
+
+
+@media screen and (max-width: 1048px){
+
+    .flex{
+        flex-direction: column;
+    }
+
+        .menu-desktop, .btn-contato{
+            display: none;
+        }
+
+        section.topo-do-site .flex{
+            align-items: center;
+            gap: 40px;
+        }
+
+        h2.titulo{
+            color: #207c78;
+            font-size: 30px;
+           line-height: 34px;
+        }
+
+        section.topo-do-site{
+            padding: 20px 8%;
+        }
+
+        .topo-do-site .txt-topo-site h1{
+            font-size: 30px;
+        }
+
+        <div class="img-topo-site">{
+            width: 500px;
+        }
+
+        section.ESPECIALIDADES{
+            padding: 40px 8%;
+        }
+
+        section.sobre{
+            padding: 80px 8%;
+            
+        }
+
+        .sobre .txt-sobre h2{
+            font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+
+        }
+
+        .btn-social{
+            text-align: center;
+        }
+
+        .img-sobre img{
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        section.portifolio{
+            padding: 80px 8%;
+        }
+
+        .img-portifolio{
+            width: 100%;
+            max-height: 360px;
+            margin: 0 auto;
+            
+        }
+
+        section.portifolio .flex{
+        gap: 60px;
+    }
+
+    footer .flex{
+    flex-direction: column;
+    }
+
+    footer .line-footer{
+    text-align: center;
+    }
+    
+    }
